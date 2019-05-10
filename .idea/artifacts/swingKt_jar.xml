@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="swingKt:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/swingKt_jar</output-path>
+    <root id="archive" name="swingKt.jar">
+      <element id="module-output" name="swingKt" />
+    </root>
+  </artifact>
+</component>
