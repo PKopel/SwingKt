@@ -8,6 +8,13 @@ import java.text.SimpleDateFormat
 import java.util.*
 import javax.swing.*
 
+/**
+ * Window for picking a date.
+ *
+ * Displays small new window with calendar.
+ *
+ * @param parent parent frame of date picker window.
+ */
 class DatePicker(parent: JFrame) {
     private val daysOfWeek = arrayOf("Pon", "Wt", "Śr", "Czw", "Pt", "Sob", "Nd")
 
@@ -45,6 +52,11 @@ class DatePicker(parent: JFrame) {
         current.text = SimpleDateFormat("MM-yyyy").format(cal.time)
         dateDialog.title = "Wybierz datę"
     }
+
+    /**
+     * Returns selected date as String
+     * @return picked date in format "dd-MM-yyyy" or empty string
+     */
 
     fun pickDate(): String {
         if (selectedDay == "") return selectedDay
